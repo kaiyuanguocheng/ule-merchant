@@ -1,0 +1,71 @@
+/*
+    关联DMS商品 by luffy
+*/
+.hgc_main{
+    width: 1000px;
+}
+.hgc_select-conditions{
+    position: relative;
+    padding:15px;
+    background: #fff;
+}
+.hgc_select-conditions .fieldset{
+    width: 300px;
+    padding:5px 0; 
+
+}
+.hgc_select-conditions .fieldset .field-name{
+    width: 75px;
+    padding:0;
+    color: #666;
+    font-size: 14px;
+    text-align: right;
+}
+.hgc_select-conditions .fieldset .field-value{
+    width: 180px;
+}
+.hgc_select-conditions .search-btn{
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+}
+.hgc_select-conditions .search-btn a{
+    display: block;
+    width:80px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background: #f94b4b;
+    font-size: 14px;
+    color: #fff;
+}
+.hgc_screen-result{
+    background: #fff;
+    padding:0 15px;
+}
+.hgc_screen-result p{
+    font-size: 14px;
+    color: #666;
+    line-height: 40px;
+}
+.hgc_screen-result .result-list{
+    max-height: 340px;
+    overflow: auto;
+    border:1px solid #c2c6d3;
+}
+.hgc_screen-result .result-list table{
+    width: 100%;
+    font-size: 12px;
+    color: #333;
+    text-align: center;
+}
+.hgc_screen-result .result-list table tbody tr{
+    height: 65px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.hgc_screen-result .result-list table .product-name{
+    width: 95px;
+}
+.hgc_screen-result .result-list table a{
+    color: #2196f3;
+}

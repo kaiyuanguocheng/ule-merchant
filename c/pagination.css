@@ -1,0 +1,69 @@
+.M-box1 {
+    padding:10px 0;
+	text-align: right;
+    color: #333;
+    font-size: 14px;
+}
+.M-box1  a{
+    text-decoration: none;
+    font-size: 14px;
+	
+}
+.M-box1  span,.M-box1  a{
+    margin:0 5px;
+	display: inline-block;
+    box-sizing: border-box;
+    text-align: center;
+}
+.M-box1 .ellipsis{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.M-box1 span.nextbtn.disabled,.M-box1 span.prebtn.disabled{
+	height: 30px;
+	width: 65px;
+	line-height: 30px;
+    color: #999;
+	margin: 0 5px;
+}
+.M-box1 .zxfPagenum{
+	color: #333;
+	background: #FFFFFF;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	border: 1px solid #dfdfdf;
+	margin: 0 5px;
+}
+.M-box1 .nextbtn,.M-box1 .prebtn{
+	color: #333;
+	background: #FFFFFF;
+	width: 65px;
+	height: 30px;
+    line-height: 30px;
+    margin:0 5px;
+	border: 1px solid #dfdfdf;
+}
+.M-box1 .zxfinput{
+	width: 35px;
+	height: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 1px solid #dfdfdf;
+	margin: 0 5px;
+}
+.M-box1 .zxfokbtn{
+	width: 45px;
+	height: 30px;
+	line-height: 30px;
+    border: 1px solid #dfdfdf;
+    background: #ededed;
+	cursor: pointer;
+}
+.M-box1 .current{
+	color: #d71f1b;
+	background: transparent;
+	border-color:transparent;
+}
