@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>邮乐商家后台管理系统</title>
+    <link href="//i0.ule.com/i/favicon.ico" rel="icon" type="image/x-icon">
+    <!-- <script type="text/javascript" src="//i0.beta.ule.com/j/lib/jquery.js"></script>
+    <script type="text/javascript" src="//i0.beta.ule.com/j/jend/jend.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="//i0.beta.ule.com/tomshopping/j/sys/130225/frameset.js"></script>
+    <link rel="stylesheet" type="text/css" href="//i0.beta.ule.com/tomshopping/c/sys/130225/urgencymsg.css">
+    <link href="//i0.beta.ule.com/tomshopping/c/sys/2014/0111/head.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="//i0.beta.ule.com/merchant/c/frameset.css">
+    <link href="//i0.beta.ulecdn.com/merchant/c/common.css" rel="stylesheet" type="text/css">
+    <link href="//i0.beta.ulecdn.com/merchant/c/pagination.css" rel="stylesheet" type="text/css">
+    <link href="//i0.beta.ulecdn.com/merchant/c/relationDms.css" rel="stylesheet" type="text/css">
+</head>
+
+<body scroll="no">
+    <div class="wrapper">
+        <div class="topInfo">
+            <iframe src="http://merchant.beta.ule.com/merHeader.do?_t=1518316290467" name="topFrame" width="100%" height="85" id="topFrame" scrolling="no"
+                frameborder="0" border="0"></iframe>
+        </div>
+        <div class="content" id="content">
+            <div id="sidebar" class="sidebar" style="width: 230px;">
+                <iframe src="http://merchant.beta.ule.com/merLeftMenu.do?_t=1518316290467&roleId=48&roleType=2&parity=" name="leftFrame"
+                    id="leftFrame" width="100%" height="100%" border="0" frameborder="no" scrolling="auto"></iframe>
+            </div>
+            <div class="hgc_main">
+                <div class="hgc_bread-crumb clearfix">
+                    <a href="#">后台管理系统</a>
+                    <span>&gt;</span>
+                    <a href="#">新品上架管理</a>
+                    <span>&gt;</span>
+                    <a href="#" class="current">新品提案</a>
+                </div>
+                <div class="hgc_step-bar clearfix">
+                    <span class="current">
+                        <i>1</i>选择分类</span>
+                    <span>
+                        <i>2</i>维护销售信息</span>
+                    <span>
+                        <i>3</i>发布成功</span>
+                </div>
+                <div class="hgc_select-conditions clearfix">
+                    <div class="clearfix fieldset fl">
+                        <span class="field-name">商品货号：</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" placeholder="输入商品货号查询">
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset fl">
+                        <span class="field-name">商品名称：</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" placeholder="输入商品名称查询">
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset fl">
+                        <span class="field-name">商品ID：</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" placeholder="输入商品ID查询">
+                        </div>
+                    </div>
+
+                    <div class="clearfix fieldset fl">
+                        <span class="field-name">品牌：</span>
+                        <div class="fl single-box">
+                            <input type="text" class="field-input" placeholder="--全部--">
+                            <ul class="single-option">
+                                <li>分类1</li>
+                                <li>分类1</li>
+                                <li>分类1</li>
+                                <li>分类1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset fl">
+                        <span class="field-name">在售状态：</span>
+                        <div class="fl single-box">
+                            <input type="text" class="field-input" placeholder="--全部--">
+                            <ul class="single-option">
+                                <li>分类1</li>
+                                <li>分类1</li>
+                                <li>分类1</li>
+                                <li>分类1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset fl">
+                        <span class="field-name">是否关联：</span>
+                        <div class="fl single-box">
+                            <input type="text" class="field-input" placeholder="--全部--">
+                            <ul class="single-option">
+                                <li>分类1</li>
+                                <li>分类1</li>
+                                <li>分类1</li>
+                                <li>分类1</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="search-btn fl"><a href="#" class="border-1">搜索</a></div>
+                </div>
+                <div class="hgc_screen-result">
+                    <p>请选择想发布的商品 共 <i class="b">123</i> 条数据</p>
+                    <div class="result-list">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <td>商品ID</td>
+                                    <td class="product-name">商品名称</td>
+                                    <td>货号</td>
+                                    <td>销售方式</td>
+                                    <td>邮乐售价</td>
+                                    <td>在售状态</td>
+                                    <td>是否关联<br />DMS商品</td>
+                                    <td>DMS商品ID</td>
+                                    <td>是否农资</td>
+                                    <td class="product-name">DMS商品名称</td>
+                                    <td>DMS<br />建议售价</td>
+                                    <td>操作</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>111111111</td>
+                                    <td class="product-name">夏明同学222ml 一瓶冰菊花绿茶</td>
+                                    <td>5896444522555</td>
+                                    <td>单件销售</td>
+                                    <td>98.22</td>
+                                    <td>已上架</td>
+                                    <td>已经关联</td>
+                                    <td>5559989844445</td>
+                                    <td>否</td>
+                                    <td class="product-name">夏明同学222ml 一瓶冰菊花绿茶</td>
+                                    <td>55.22</td>
+                                    <td>
+                                        <a href="#">重新关联DMS商品</a>
+                                        <br>
+                                        <a href="#">取消关联</a>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="M-box1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="//i0.beta.ulecdn.com/merchant/j/common.js"></script>
+    <script src="//i0.beta.ulecdn.com/merchant/j/lib/pagination.js"></script>
+    <script src="//i0.beta.ulecdn.com/merchant/j/relationDms.js"></script></body>
+
+</html>
+<a href="ULEMOBILE://type=SHARE_URL?title=我就是个标题&desc=我就是个描述&thumbnail=http://p1.so.qhimgs1.com/t01980e900b929cd2a1.jpg&url=http://i360mall.com/search?cat3=273&">分享链接</a>

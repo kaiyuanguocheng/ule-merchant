@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>邮乐商家后台管理系统</title>
+    <link href="//i0.ule.com/i/favicon.ico" rel="icon" type="image/x-icon">
+    <!-- <script type="text/javascript" src="//i0.beta.ule.com/j/lib/jquery.js"></script>
+    <script type="text/javascript" src="//i0.beta.ule.com/j/jend/jend.js"></script> -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="//i0.beta.ule.com/tomshopping/j/sys/130225/frameset.js"></script>
+    <link rel="stylesheet" type="text/css" href="//i0.beta.ule.com/tomshopping/c/sys/130225/urgencymsg.css">
+    <link href="//i0.beta.ule.com/tomshopping/c/sys/2014/0111/head.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" type="text/css" href="//i0.beta.ule.com/merchant/c/frameset.css">
+    <link href="//i0.beta.ulecdn.com/merchant/c/common.css" rel="stylesheet" type="text/css">
+    <link href="//i0.beta.ulecdn.com/merchant/c/newProductEntry.css" rel="stylesheet" type="text/css">
+</head>
+
+<body scroll="no">
+    <div class="wrapper">
+        <div class="topInfo">
+            <iframe src="http://merchant.beta.ule.com/merHeader.do?_t=1518316290467" name="topFrame" width="100%" height="85" id="topFrame" scrolling="no"
+                frameborder="0" border="0"></iframe>
+        </div>
+        <div class="content" id="content">
+            <div id="sidebar" class="sidebar" style="width: 230px;">
+                <iframe src="http://merchant.beta.ule.com/merLeftMenu.do?_t=1518316290467&roleId=48&roleType=2&parity=" name="leftFrame"
+                    id="leftFrame" width="100%" height="100%" border="0" frameborder="no" scrolling="auto"></iframe>
+            </div>
+            <div class="hgc_main">
+                <div class="hgc_bread-crumb clearfix">
+                    <a href="#">后台管理系统</a>
+                    <span>&gt;</span>
+                    <a href="#">新品上架管理</a>
+                    <span>&gt;</span>
+                    <a href="#" class="current">新品提案</a>
+                </div>
+                <div class="hgc_step-bar clearfix">
+                    <span class="current">
+                        <i>1</i>选择分类</span>
+                    <span>
+                        <i>2</i>维护销售信息</span>
+                    <span>
+                        <i>3</i>发布成功</span>
+                </div>
+                <div class="hgc_seled-classify clearfix">
+                    <div class="classify fl seltag">
+                        <em>您选择的分类</em>
+                        <strong>休闲食品 > 坚果炒货 > 坚果炒货</strong>
+                    </div>
+                    <div class="brand fl seltag">
+                        <em>您选择的品牌</em>
+                        <strong>品牌名</strong>
+                        <a href="#">返回修改</a>
+                    </div>
+                </div>
+                <div class="module hgc-productinfo">
+                    <h2>商品基础信息</h2>
+                    <div class="clearfix fieldset product-name">
+                        <span class="field-name"><i class="red">*</i>商品名称</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp=".{1,50}" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入商品名称" placeholder="请输入商品名称..." />
+                            <b class="tips"><i class="blue">0</i>/50</b>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name">
+                            <i class="red">*</i>包装方式</span>
+                        <div class="field-value">
+                            <div class="analog-radiobox clearfix">
+                                <span class="analog-radio current">
+                                    <b><i></i></b>
+                                    <label>整箱</label>
+                                </span>
+                                <span class="analog-radio">
+                                    <b>
+                                        <i></i>
+                                    </b>
+                                    <label>整箱</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset box-number">
+                        <span class="field-name"><i class="red">*</i>箱装数</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp="\d{1,}" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入箱装数量" placeholder="箱装数量" />
+                        </div>
+                        <p class="fl"></p>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp=".{1,}" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入单位" placeholder="单件单位" />
+                        </div>
+                        <p class="fl">/</p>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp=".{1,}" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入单位" placeholder="整箱单位" />
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name">
+                            <i class="red">*</i>是否适用有效期</span>
+                        <div class="field-value">
+                            <div class="analog-radiobox clearfix">
+                                <span class="analog-radio current">
+                                    <b><i></i></b>
+                                    <label>是</label>
+                                </span>
+                                <span class="analog-radio">
+                                    <b>
+                                        <i></i>
+                                    </b>
+                                    <label>否</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name"><i class="red">*</i>有效期</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp="\d{1,}"  data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入有效期" />
+                            <b class="tips">天</b>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset lwh">
+                        <span class="field-name">长*宽*高</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" placeholder="长" />
+                        </div>
+                        <p class="fl">*</p>
+                        <div class="field-value">
+                            <input type="text" class="field-input" placeholder="宽" />
+                        </div>
+                        <p class="fl">*</p>
+                        <div class="field-value">
+                            <input type="text" class="field-input" placeholder="高" />
+                            <b class="tips">毫米</b>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name">重量</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" />
+                            <b class="tips">克</b>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name">生产厂家</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" />
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset package-type">
+                        <span class="field-name">包装类型</span>
+                        <div class="field-value">
+                            <div class="analog-radiobox clearfix">
+                                <span class="analog-radio current">
+                                    <b><i></i></b>
+                                    <label>普通商品（如服装、箱包、鞋帽、纸制品等）</label>
+                                </span>
+                                <span class="analog-radio">
+                                    <b>
+                                        <i></i>
+                                    </b>
+                                    <label> 液体或膏状商品（油类、酒类、洗发水、洗衣液等洗化类商品等） </label>
+                                </span>
+                                <span class="analog-radio">
+                                    <b><i></i></b>
+                                    <label>粉末商品（奶粉、洗衣粉等</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="module hgc-productinfo">
+                    <h2>商品销售信息</h2>
+                    <div class="clearfix fieldset product-name">
+                        <span class="field-name"><i class="red">*</i>商品销售名称</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp=".{1,50}" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入商品名称" placeholder="默认带出标准商品库，商品标准名称" />
+                            <b class="tips"><i class="blue">0</i>/50</b>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset product-name">
+                        <span class="field-name">商品卖点</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" placeholder="输入商品卖点（商品副标题）" />
+                            <b class="tips"><i class="blue">0</i>/50</b>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset product-no">
+                        <span class="field-name"><i class="red">*</i>商品货号</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp="\d{1,}" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入商品货号" />
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name"><i class="red">*</i>商品起售数量</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp="\d{1,}" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入商品起售数量" value="1" />
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name">
+                            <i class="red">*</i>是否赠品</span>
+                        <div class="field-value">
+                            <div class="analog-radiobox clearfix">
+                                <span class="analog-radio current">
+                                    <b><i></i></b>
+                                    <label>是，不单独销售</label>
+                                </span>
+                                <span class="analog-radio">
+                                    <b>
+                                        <i></i>
+                                    </b>
+                                    <label>否，正常销售</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name">
+                            <i class="red">*</i>是否限购</span>
+                        <div class="field-value">
+                            <div class="analog-radiobox clearfix">
+                                <span class="analog-radio current">
+                                    <b><i></i></b>
+                                    <label>是，每人每天最多购买</label>
+                                </span>
+                                <span class="analog-radio">
+                                    <b>
+                                        <i></i>
+                                    </b>
+                                    <label>是，30天内每人最多购买</label>
+                                </span>
+                                <span class="analog-radio">
+                                    <b>
+                                        <i></i>
+                                    </b>
+                                    <label>否，不限购</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name">
+                            <i class="red">*</i>是否允许改价</span>
+                        <div class="field-value">
+                            <div class="analog-radiobox clearfix">
+                                <span class="analog-radio current">
+                                    <b><i></i></b>
+                                    <label>是，允许专区修改价格</label>
+                                </span>
+                                <span class="analog-radio">
+                                    <b>
+                                        <i></i>
+                                    </b>
+                                    <label>否，不允许改价</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset auto-off">
+                        <span class="field-name">
+                            <i class="red">*</i>是否自动下架</span>
+                        <div class="field-value">
+                            <div class="analog-radiobox clearfix">
+                                <span class="analog-radio current">
+                                    <b><i></i></b>
+                                    <label>是，<input type="text" class="field-input" />小时后自动下架</label>
+                                </span>
+                                <span class="analog-radio">
+                                    <b>
+                                        <i></i>
+                                    </b>
+                                    <label>否</label>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="module hgc-productinfo clearfix price-info">
+                    <h2 class="clearfix">商品价格信息<a href="#" class="fr">区域价格设置</a></h2>
+                    <div class="clearfix fieldset">
+                        <span class="field-name"><i class="red">*</i>售价</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp="^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入正确的金额"  placeholder="请输入商品售价" data-regexp="\d{1,10}" />
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name"><i class="red">*</i>结算货款</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp="^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入正确的金额" />
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset">
+                        <span class="field-name"><i class="red">*</i>市场价</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input" data-regexp="^(([1-9][0-9]*)|(([0]\.\d{1,2}|[1-9][0-9]*\.\d{1,2})))$" data-text="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;请输入正确的金额" />
+                        </div>
+                    </div>
+                    <div class="clearfix fieldset points">
+                        <span class="field-name"><i class="red">*</i>参考扣点</span>
+                        <div class="field-value">
+                            <input type="text" class="field-input disabled" />
+                        </div>
+                    </div>
+                    <p class="notice"> 注意：商品“售价”为商品在邮乐平台的销售价格，“结算货款”为商品经邮乐平台销售后商家所得款项，“市场价”仅作参考展示用；</p>
+                </div>
+                <div class="module hgc-productinfo">
+                    <h2>颜色规格
+                        <a class="color-add border-1" href="#">添加</a>
+                        <div class="color-options">
+                            <span class="field-name">颜色选择</span>
+                            <div class="field-value">
+                                <div class="analog-radiobox clearfix">
+                                    <span class="analog-radio current">
+                                        <b>
+                                            <i></i>
+                                        </b>
+                                        <label>
+                                            <i class="color-sample" style="background:#fff;"></i>不适用</label>
+                                    </span>
+                                    <span class="analog-radio">
+                                        <b>
+                                            <i></i>
+                                        </b>
+                                        <label>
+                                            <i class="color-sample" style="background:#f10602;"></i> 红色</label>
+                                    </span>
+                                    <span class="analog-radio">
+                                        <b>
+                                            <i></i>
+                                        </b>
+                                        <label>
+                                            <i class="color-sample" style="background:#f10602;"></i> 红色</label>
+                                    </span>
+                                    <span class="analog-radio">
+                                        <b>
+                                            <i></i>
+                                        </b>
+                                        <label>
+                                            <i class="color-sample" style="background:#f10602;"></i> 红色</label>
+                                    </span>
+                                    <span class="analog-radio">
+                                        <b>
+                                            <i></i>
+                                        </b>
+                                        <label>
+                                            <i class="color-sample" style="background:#f10602;"></i> 红色</label>
+                                    </span>
+                                    <span class="analog-radio">
+                                        <b>
+                                            <i></i>
+                                        </b>
+                                        <label>
+                                            <i class="color-sample" style="background:#f10602;"></i>
+                                            <input type="text" class="color-value">
+                                        </label>
+                                    </span>
+                                    <span class="analog-radio-add fl">
+                                        添加
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </h2>
+                    <p class="color-select clearfix">
+                        <span class="fl">颜色选择</span>
+                        <i class="value fl" style="background:#f10602;"></i>
+                        <b class="fl">红色</b>
+                        <a href="#" class="delete border-1 fs-14 fr">删除</a>
+                    </p>
+                    <div class="size-pic-editor">
+                        <div class="size-editor clearfix">
+                            <div class="total-title fl">
+                                <i class="red">*</i>规格
+                            </div>
+                            <div class="artical-editor size-artical-editor fl">
+                                <ul>
+                                    <li class="clearfix bg-f5">
+                                        <span class="w135"><i class="red">*</i>规格</span>
+                                        <span class="w145"><i class="red">*</i>单件条形码</span>
+                                        <span class="w150"><i class="red">*</i>整箱条形码</span>
+                                        <span class="w20"></span>
+                                        <span class="w130">SKU</span>
+                                        <span class="w110"><i class="red">*</i>库存</span>
+                                        <span class="w110">操作</span>
+                                    </li>
+                                    <li class="clearfix">
+                                        <span class="w135 biginput">普通</span>
+                                        <span class="w145 biginput">200912341022</span>
+                                        <span class="w150 biginput">
+                                            <div class="select-input disabled">
+                                                <input type="text" readonly class="">
+                                                <ol>
+                                                    <li>商品无条形码</li>
+                                                    <li>输入条形码</li>
+                                                </ol>
+                                                <div class="tips erro-exist">
+                                                    <p class="border-2">您输入的条形码不合法，请录入正确的条形码！<i class="triangle"></i></p>
+                                                </div>
+                                            </div>
+                                        </span>
+                                        <span class="w20"></span>
+                                        <span class="w130 smallinput">
+                                            <div class="select-input">
+                                                <input type="text" class="">
+                                            </div>
+                                        </span>
+                                        <span class="w110 smallinput">
+                                            <div class="select-input">
+                                                <input type="text"  value="" class="error">
+                                            </div>
+                                        </span>
+                                        <span class="w110 clearfix operation">
+                                            <i>sc</i>
+                                            <i title="编辑">bj</i>
+                                        </span>
+                                    </li>
+                                    <li class="add-size">添加</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="pic-editor clearfix">
+                            <div class="total-title fl">
+                                <i class="red">*</i>商品主图
+                            </div>
+                            <div  class="artical-editor pic-artical-editor fl">
+                                <div class="pic-upload">
+                                    <img src="" alt="">
+                                    <i class="close"></i>
+                                    <i class="add-pop"></i>
+                                </div>
+                                <h4>图片要求：</h4>
+                                <p>尺寸：<i class="b">450*450</i>，图片大小<i class="b">200KB</i>以内，格式：<i class="b">.jpg、.bmp、.png</i></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="module hgc-productinfo">
+                    <h2>商品描述信息</h2>
+                    <div class="text-editor" id="editor">
+                        <p>欢迎使用 <b>wangEditor</b> 富文本编辑器</p>
+                    </div>
+                </div>
+
+                <div class="hgc_editor-success">
+                    <a href="#" class="delay-shelf">保存暂缓上架</a>
+                    <a href="#" class="shelf-sales">上架销售</a>
+                </div>
+                <div class="hgc_entry-rules">
+                    <p>如果显示<i class="b">“上传失败”</i>，则很有可能是<i class="b">“商品描述信息”</i>中添加的代码图片地址有错误。 </p>
+                    <p class="border">请尝试直接点击<i class="b">“商品描述信息”</i>中的<i class="b">“上传图片”</i>按钮上传所需要的图片。</p>
+                    <p class="pad"><i class="b">保存暂不上架</i>:如果您的商品信息还未全部填完，请点此按钮进行保存，已备下次继续添加。</p>
+                    <p><i class="b">商品上架</i>:新的内容会在【15-30】分钟后所编辑的内容会全部更新到前台。</p>
+                </div>
+
+                <div class="hgc_right-anchor" id="hgc_right-anchor">
+                    <ul>
+                        <li>
+                            <span>基本<br />信息</span>
+                        </li>
+                        <li>
+                            <span>销售<br />信息</span>
+                        </li>
+                        <li>
+                            <span>价格<br />信息</span>
+                        </li>
+                        <li>
+                            <span>颜色<br />规格</span>
+                        </li>
+                        <li>
+                            <span>商品<br />描述</span>
+                        </li>
+                        <li>
+                            <span>返回<br />顶部</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="http://i0.beta.ulecdn.com/merchant/j/lib/wangEditor.js"></script>
+    <script src="http://i0.beta.ulecdn.com/merchant/j/common.js"></script>
+    <script src="http://i0.beta.ulecdn.com/merchant/j/newProductEntry.js"></script>
+</body>
+
+</html>
+<a href="ULEMOBILE://type=SHARE_URL?title=我就是个标题&desc=我就是个描述&thumbnail=http://p1.so.qhimgs1.com/t01980e900b929cd2a1.jpg&url=http://i360mall.com/search?cat3=273&">分享链接</a>
